@@ -1,0 +1,185 @@
+$accent: #398BFF;
+$second: #0068ef;
+$text-color: #001731;
+// ============= Global setup start =============
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 330px;
+    position: relative;
+    font-family: "Gilroy", sans-serif;
+    overflow-x: hidden;
+    color: $text-color;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+select:not(:-internal-list-box) {
+    overflow: hidden;
+}
+
+ul,
+ol {
+    li {
+        list-style-type: none;
+    }
+}
+
+a {
+    transition: all 0.3s ease;
+    color: $accent;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: $second;
+        text-decoration: none;
+    }    
+}
+
+.button {
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;    
+    cursor: pointer;
+    background-color: $accent;
+    a {
+        font-family: "Gilroy", sans-serif;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 700 !important;
+        /* Green */
+        border: none;
+        border-radius: 4px;
+        padding: 8px 12px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        width: 100%;        
+    }
+    &:hover {
+        background-color: $second;
+        a {            
+            color: #f8f8f8 !important;
+        }
+    }
+}
+
+.button-dark {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background: rgba(44, 130, 253, 0.15);
+    cursor: pointer;
+    a {
+        color: $accent !important;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 600 !important;
+        /* Green */
+        border: none;
+        border-radius: 4px;
+        padding: 8px 12px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        width: 100%;        
+    }
+    &:hover {
+        background-color: $second;
+        a {
+            color: #f8f8f8 !important;
+        }
+    }
+}
+
+.container-xl {
+    max-width: 1440px;
+}
+
+.container {
+    max-width: 1280px;
+}
+
+.container-s {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.container-xs {
+    max-width: 1076px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.section__title {
+    margin-bottom: 24px;
+    img {
+        width: 34px;
+        height: 34px;
+        margin-bottom: 24px;
+    }
+    h2 {
+        font-size: 42px;
+        font-weight: bold;
+        line-height: 1;
+    }
+    p {
+        color: rgba(0, 23, 49, 0.55);
+        font-weight: 500;
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    @include mw-767 {
+        margin-bottom: 20px;
+        img {
+            width: 25px;
+            height: 25px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.invisible {
+    opacity: 0;
+}
+
+// ============= Global setup end =============
+
+
+
