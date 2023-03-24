@@ -1,7 +1,5 @@
 Omaha solver is a landing page that is fully responsive to different devices.
 
-The code is written entirely by me.
-
 Core technologies: 
 Html, Sass(Scss syntax), Javascript.
 
